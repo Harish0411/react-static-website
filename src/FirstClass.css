@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topbar{
+    background-color: #191919;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+ 
+}
+.top-container{
+    width: 90%;
+    margin: auto;
+}
+.contact-info i{
+    color: #cc1616;
+    margin-right: 5px;
+}
+.contact-info i:last-child{
+    margin-left: 15px;
+}
+a{
+    text-decoration: none;
+}
+.contact-info a{
+    color: rgba(255, 255, 255, 0.6);
+}
+.social a{
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 4px 12px;
+    transition: 0.3s;
+}
+
+header{
+    background-color: gray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+header{
+    background: rgba(25, 25, 25, 0.95);
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+header .logo a{
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col ul{
+    list-style: none;
+}
+.nav li{
+    margin-right: 10px;
+}
+.nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav .active{
+    background: #cc1616;
+}
+.nav li:hover{
+    background: #cc1616;
+    transition: 0.5s;
+}
+.nav li{
+    display: inline-block;
+    padding: 25px 15px 24px 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.mobile-nav{
+    font-size: 28px;
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Media queries */
+
+@media (min-width:320px){
+  .mobile-nav{
+    display: block;
+  }
+  .nav{
+    display: none;
+  }
+  .topbar{
+    display: none;
+  }
+}
+@media (min-width:690px){
+    .mobile-nav{
+        display: block;
+      } 
+    .nav{
+        display: none;
+    } 
+    .topbar{
+        display: block;
+    } 
+}
+@media (min-width:1020px){
+    .mobile-nav{
+        display: none;
+      } 
+    .nav{
+        display: block;
+    } 
+    .topbar{
+        display: block;
+    } 
+}

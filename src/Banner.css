@@ -1,0 +1,90 @@
+
+.banner-sec{
+  width: 100%;
+  height: calc(100vh - 110px);
+  background: url('./hero-bg.jpg') top center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+}
+.banner-sec::before{
+  content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.banner-container{
+   width: 90%;
+   margin: auto;
+   position: relative;
+   z-index: 5;
+}
+.banner-container .title{
+  margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.banner-container h2{
+  color: #eee;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.banner-container .btn-started{
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* media queries */
+
+@media (min-width:320px){
+
+  .banner-container .title{
+   
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 40px;
+  }
+  .banner-sec{
+    padding: 20px 0;
+  }
+}
+@media (min-width:690px){
+  .banner-container .title{
+  
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 48px;
+  }
+  .banner-sec{
+    padding: 40px 0;
+  }
+}
+@media (min-width:1020px){
+  .banner-container .title{
+  
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 56px;
+  }
+  .banner-sec{
+    padding: 60px 0;
+  }
+}
+
